@@ -1,0 +1,22 @@
+.pakonomics {
+  background-image: url(../../assets/bg-muted-left-right.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  .pakonomics-wrapper {
+    max-width: 992px;
+    margin: auto;
+    p {
+      font-size: 1.6rem;
+    }
+    .text-center {
+      h2 {
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+    }
+    
+  }
+}

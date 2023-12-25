@@ -1,0 +1,64 @@
+.milestones {
+  padding-bottom: 1rem;
+  .milestones-wrapper {
+    margin: auto;
+    background: $black;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    .title {
+      margin-bottom: 3rem;
+    }
+    .milestone-item {
+      margin: 0.8rem 0;
+      display: flex;
+      justify-content: space-between;
+      .milestone-desc {
+        width: 100%;
+        // background: linear-gradient(
+        //   140deg,
+        //   darken($color: $pink, $amount: 20),
+        //   lighten($color: $pink, $amount: 20)
+        // );
+        padding: 2rem;
+        .image {
+          margin-bottom: 1rem;
+          img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+          }
+        }
+        h4 {
+          margin-bottom: 1rem;
+          color: $white;
+        }
+        ol {
+          margin-bottom: 0;
+          padding-left: 1rem;
+          li {
+            margin-top: 0.5rem;
+            color: $mutedText;
+          }
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 0;
+          li {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            margin-left: -0.4rem;
+            margin-top: 0.5rem;
+            color: $mutedText;
+            img {
+              width: 30px;
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

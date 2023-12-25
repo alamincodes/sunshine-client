@@ -1,0 +1,121 @@
+.faq {
+  background-image: url(../../assets/bg-muted-left.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  .faq-wrapper {
+    max-width: 768px;
+    margin: auto;
+    position: relative;
+    .title {
+      margin-bottom: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .question-mark {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: lighten($color: $black, $amount: 05);
+      position: absolute;
+      left: -5rem;
+      top: 1rem;
+      z-index: 11;
+      @media screen and(max-width: 992px) {
+        height: 6rem;
+        width: 6rem;
+        left: -1.5rem;
+        top: 4rem;
+        font-size: 2rem;
+      }
+      @media screen and(max-width: 768px) {
+        display: none;
+      }
+      & + span {
+        position: absolute;
+        left: -6rem;
+        top: 0;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        background: $black;
+        @media screen and(max-width: 992px) {
+          height: 8rem;
+          width: 8rem;
+          left: -2.5rem;
+          top: 3rem;
+        }
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    .questions {
+      border-radius: 1rem;
+      border: 3px solid darken($color: $pink, $amount: 30);
+      padding: 2rem;
+      margin-left: 1rem;
+      background: $black;
+      margin-bottom: 3rem;
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        cursor: pointer;
+        .number {
+          span {
+            color: darken($color: $pink, $amount: 30);
+            margin-right: 0.5rem;
+          }
+        }
+        i {
+          padding: 0.2rem;
+        }
+      }
+      .question-item {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 2rem;
+        background: lighten($color: $black, $amount: 05);
+        padding: 1rem;
+        border-radius: 0.35rem;
+        @media screen and(max-width: 768px) {
+          margin: 0 0 1rem;
+          &:last-child {
+            margin: 0;
+          }
+        }
+        & > div {
+          overflow: hidden;
+          height: 0px;
+          transition: 0.25s ease-in-out;
+          p:first-child {
+            border-top: 2px solid darken($color: $pink, $amount: 30);
+            margin-top: 1rem;
+            margin-bottom: 0;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+    .contact {
+      border-radius: 2rem;
+      border: 3px solid darken($color: $pink, $amount: 20);
+      padding: 2rem;
+      text-align: center;
+      background: $black;
+      h2 {
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

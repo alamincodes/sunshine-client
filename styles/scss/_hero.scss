@@ -1,0 +1,65 @@
+.hero {
+  min-height: 550px;
+  height: calc(100vh - 9.1025rem);
+  @media screen and(max-width: 768px) {
+    min-height: unset;
+    height: auto;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @media screen and(max-width: 768px) {
+      flex-direction: column-reverse;
+      height: unset;
+    }
+    .left {
+      & > div {
+        margin-right: 4rem;
+        @media screen and(max-width: 768px) {
+          margin-right: 0;
+          margin-top: 1rem;
+        }
+        @media screen and(max-width: 576px) {
+          text-align: center;
+        }
+        .site-title {
+          font-size: 3rem;
+          color: $pink;
+        }
+      }
+    }
+    .right {
+      & > div {
+        margin-left: 4rem;
+        @media screen and(max-width: 768px) {
+          margin-left: 0;
+          margin-top: 1rem;
+        }
+        img {
+          width: 12rem;
+        }
+      }
+    }
+  }
+  .hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    .btn {
+      margin: 0.3rem 0;
+      margin-right: 1rem;
+      border-radius: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 1rem;
+      width: 17rem;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
