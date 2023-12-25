@@ -1,3 +1,8 @@
+:root {
+  --primary: #4edbe6;
+  --secondary: #235871;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 * {
   margin: 0;
@@ -41,26 +46,26 @@ body {
   background-image: url(../../assets/milestone-galaxy.jpg);
 }
 .btn-pink {
-  background-color: #8809cd;
+  background-color: var(--primary);
   color: #fff;
 }
 .btn-outline-pink {
   background-color: transparent;
-  border: 1px solid #a614f5;
+  border: 1px solid var(--primary);
   color: #fff;
 }
 .btn-outline-pink:hover {
-  background-color: #8809cd;
+  background-color: var(--primary);
 }
 .btn-pink-gradient {
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#8809cd),
-    to(#b945f7)
+    from(var(--primary)),
+    to(var(--secondary))
   );
-  background: linear-gradient(to right, #8809cd, #b945f7);
+  background: linear-gradient(to right, var(--primary), var(--secondary));
   color: #fff;
 }
 .btn-pink-gradient:hover {
@@ -78,7 +83,7 @@ body {
   transform: scale(1.1);
 }
 .title {
-  color: #a614f5;
+  color: var(--primary);
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -115,7 +120,7 @@ section {
 .gradient-card {
   width: 100%;
   margin: auto;
-  background: #140038;
+  background: var(--secondary);
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 3rem;
@@ -271,7 +276,7 @@ header .header-wrapper .menu {
 }
 .hero .hero-wrapper .left > div .site-title {
   font-size: 3rem;
-  color: #a614f5;
+  color: var(--primary);
 }
 .hero .hero-wrapper .right > div {
   margin-left: 4rem;
@@ -367,7 +372,7 @@ header .header-wrapper .menu {
 }
 .milestones .milestones-wrapper {
   margin: auto;
-  background: #0b001e;
+  background: var(--secondary);
   border-radius: 2rem;
   margin: 2rem 0;
 }
@@ -406,7 +411,7 @@ header .header-wrapper .menu {
 }
 .milestones .milestones-wrapper .milestone-item .milestone-desc ol li {
   margin-top: 0.5rem;
-  color: #6c757d;
+  color: white;
 }
 .milestones .milestones-wrapper .milestone-item .milestone-desc ul {
   list-style: none;
@@ -424,7 +429,7 @@ header .header-wrapper .menu {
   margin-bottom: 0.5rem;
   margin-left: -0.4rem;
   margin-top: 0.5rem;
-  color: #6c757d;
+  color: white;
 }
 .milestones .milestones-wrapper .milestone-item .milestone-desc ul li img {
   width: 30px;
@@ -526,7 +531,7 @@ header .header-wrapper .menu {
 }
 .faq .faq-wrapper .questions {
   border-radius: 1rem;
-  border: 3px solid #47056b;
+  border: 3px solid var(--primary);
   padding: 2rem;
   margin-left: 1rem;
   background: #0b001e;
@@ -543,7 +548,7 @@ header .header-wrapper .menu {
   cursor: pointer;
 }
 .faq .faq-wrapper .questions h3 .number span {
-  color: #47056b;
+  color: var(--primary);
   margin-right: 0.5rem;
 }
 .faq .faq-wrapper .questions h3 i {
@@ -554,7 +559,7 @@ header .header-wrapper .menu {
   margin-bottom: 1rem;
   margin-left: 5rem;
   margin-right: 2rem;
-  background: #140038;
+  background: var(--secondary);
   padding: 1rem;
   border-radius: 0.35rem;
 }
@@ -614,7 +619,7 @@ footer .social ul li a {
   color: #fff;
 }
 footer .footer-bottom {
-  border-top: 1px solid #a614f5;
+  border-top: 1px solid var(--primary);
 }
 footer .footer-bottom .footer-text {
   display: -webkit-box;
