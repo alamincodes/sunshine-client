@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 :root {
   --primary: #4edbe6;
   --secondary: #235871;
   --bg-color: #0a1c1d;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -145,6 +145,91 @@ h6,
 .btn-lg {
   font-size: 1rem;
 }
+
+.timeline-section {
+  padding: 100px 15px;
+}
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--secondary);
+  left: calc(50% - 1px);
+}
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+  height: 40px;
+  width: 40px;
+  background-color: var(--primary);
+  position: absolute;
+  left: calc(50% - 20px);
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding: 30px;
+  border-radius: 5px;
+}
+.timeline-content h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.timeline-content li {
+  color: #c8c8c8;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .timeline-dot {
+    height: 30px;
+    width: 30px;
+    background-color: var(--primary);
+    position: absolute;
+    left: -5px;
+    border-radius: 50%;
+  }
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+}
+
 header {
   padding: 1rem 0;
 }

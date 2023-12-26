@@ -28,6 +28,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/dist/styles.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   </head>
   <body>
     <div class="bg-image hero-galaxy">
@@ -171,215 +172,131 @@
         </div>
       </div>
     </section>
-    <div class="bg-image milestone-galaxy" id="milestone">
-      <section class="milestones">
-        <div class="container">
-          <h2 class="title fade-zoom-in">Milestones</h2>
-          <div class="milestones-wrapper">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="milestone-item fade-left">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/milestone-earth.png" alt="" />
-                    </div>
-                    <div>
-                      <h4>Launch From Earth</h4>
-                      <ol>
-                        <li>Website</li>
-                        <li>Socials</li>
-                        <li>marketing</li>
-                        <li>Launch of $SUNSHINE</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="milestone-item fade-right">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/milestone-moon.png" alt="" />
-                    </div>
-                    <h4>Moon 1000 Holders</h4>
-                    <ol>
-                      <li>CoinGecko, CoinMarketCap application</li>
-                      <li>Sol logo application</li>
-                      <li>Marketing Campaign</li>
-                      <li>Techrate audit</li>
-                      <li>CEX applications</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
+
+    <!-- timeline -->
+    <section class="timeline-section bg-image milestone-galaxy">
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot flex justify-center items-center">
+            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
+          </div>
+          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
+            <div class="flex lg:justify-end justify-start">
+              <img src="./assets/milestone-earth.png" alt="" />
             </div>
-            <!-- <div class="text-center my-5">
+            <h3 class="">Launch From Earth</h3>
+            <ul class="mt-2">
+              <li>Website</li>
+              <li>Socials</li>
+              <li>marketing</li>
+              <li>Launch of SUNSHINE</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot flex justify-center items-center">
+            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
+          </div>
+          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
+            <div class="flex lg:justify-end justify-start">
+              <img src="./assets/milestone-moon.png" alt="" />
+            </div>
+            <h3 class="">Moon 1000 Holders</h3>
+            <ul class="mt-2">
+              <li>CoinGecko, CoinMarketCap application</li>
+              <li>Sol logo application</li>
+              <li>Marketing Campaign</li>
+              <li>Techrate audit</li>
+              <li>CEX applications</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot flex justify-center items-center">
+            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
+          </div>
+
+          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
+            <div class="flex lg:justify-end justify-start">
               <img
-                style="max-width: 400px; width: 100%"
-                src="./assets/planet-to-planet.png"
-                class="img-fluid fade-zoom-in"
+                class="w-28 h-28"
+                src="./assets/milestone-saturn.png"
                 alt=""
               />
             </div>
-            <div class="text-center">
-              <h1 class="fade-top">Planet Chimp 100,000 Holders</h1>
-            </div> -->
-          </div>
-          <div class="milestones-wrapper">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="milestone-item fade-left">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/milestone-mars.png" alt="" />
-                    </div>
-                    <h4>Beyond the MOON! 5000 Holders</h4>
-                    <ol>
-                      <li>
-                        Ownership Renouncement (can only be done after
-                        negotiation with exchanges)
-                      </li>
-                      <li>Partnership with Alethea AI CharacterGPT</li>
-                      <li>V2 First use case development</li>
-                      <li>DAO formation</li>
-                      <li>More Partnerships</li>
-                    </ol>
-                  </div>
+            <h3>Launch From Earth</h3>
+            <ul class="mt-2">
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="milestone-item fade-right">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/milestone-jupiter.png" alt="" />
-                    </div>
-                    <h3>SUNSHINE PARADISE 10000 Holders</h3>
-
-                    <ul>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                    </ul>
-                  </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="milestones-wrapper">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="milestone-item fade-left">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/milestone-saturn.png" alt="" />
-                    </div>
-                    <h3>Saturn 25000 Holders</h3>
-                    <ul>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                    </ul>
-                  </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="milestone-item fade-right">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/milestone-uranus.png" alt="" />
-                    </div>
-                    <h3>Uranus 50000 Holders</h3>
-                    <ul>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                    </ul>
-                  </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="milestones-wrapper" style="background: unset">
-            <div class="row justify-content-center">
-              <div
-                class="col-md-6"
-                style="background: var(--secondary); border-radius: 2rem"
-              >
-                <div class="milestone-item fade-right">
-                  <div class="milestone-desc">
-                    <div class="image">
-                      <img src="./assets/monkey-on-stone.png" alt="" />
-                    </div>
-                    <h3>Planet of Apes 100,000 Holders</h3>
-                    <ul>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                      <li>
-                        <img src="./assets/lock-icon.svg" alt="" />
-                        <span>To be unlocked</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="timeline-item">
+          <div class="timeline-dot flex justify-center items-center">
+            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
+          </div>
+          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
+            <div class="flex lg:justify-end justify-start">
+              <img
+                class="w-28 h-28 object-cover"
+                src="./assets/milestone-jupiter.png"
+                alt=""
+              />
+            </div>
+            <h3 class="">Beyond the MOON! 5000 Holders</h3>
+            <ul class="mt-2">
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-end space-x-2">
+                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
+                  <span>To be unlocked</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- timeline end -->
     <section class="pakonomics" id="pakonomics">
       <div class="container">
         <div class="pakonomics-wrapper">
@@ -556,8 +473,11 @@
             </div>
           </div>
           <div class="text-center mt-5">
-            <a href="#" class="btn btn-lg btn-pink-gradient m-3 fade-left"
-              >BUY ON PANCAKESWAP</a
+            <a
+              href="#"
+              style="text-transform: uppercase"
+              class="btn btn-lg btn-pink-gradient m-3 fade-left"
+              >Buy on Raydium or Jupiter</a
             >
             <a href="#" class="btn btn-lg btn-pink-gradient m-3 fade-right"
               >JOIN THE TELEGRAM</a
