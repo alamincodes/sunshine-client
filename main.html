@@ -29,6 +29,7 @@
     />
     <link rel="stylesheet" href="./styles/dist/styles.min.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div class="bg-image hero-galaxy">
@@ -36,15 +37,20 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="logo">
-              <a href="/"><img src="./assets/logo.png" alt="Logo" /></a>
+              <a href="/"
+                ><img
+                  src="./assets/logo.jpg"
+                  class="rounded-full w-24 h-24 object-cover"
+                  alt="Logo"
+              /></a>
             </div>
             <ul class="menu-lists">
               <li><a href="#">Home</a></li>
-              <li><a href="#about">Who is SUNSHINE</a></li>
-              <li><a href="#rugfee">Rug Free</a></li>
-              <li><a href="#milestone">Milestone</a></li>
-              <li><a href="#pakonomics">Tokenomics</a></li>
-              <li><a href="#faq">faq</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#tokenomic">Tokenomic</a></li>
+              <li><a href="#roadmap">Roadmap</a></li>
+              <li><a href="#pakonomics">Connect with us</a></li>
+              <li><a href="#faq">PRESALE</a></li>
             </ul>
             <div class="menu"><i class="fas fa-bars"></i></div>
           </div>
@@ -55,36 +61,22 @@
           <div class="hero-wrapper">
             <div class="left fade-left">
               <div style="max-width: 500px">
-                <h1>Introducing</h1>
-                <h1 class="site-title">SUNSHINE</h1>
+                <h1 class="mb-2 text-xl">Introducing the newst meme token:</h1>
+                <h1 class="site-title text-4xl font-bold my-2">SUNSHINE</h1>
                 <p>
-                  SUNSHINE isn't just a group of sungazers; they're a passionate
-                  team committed to a singular mission — to exude warmth, spread
-                  cheer, and cultivate happiness.
+                  Brought to you by a team of passionate developers who are
+                  committed to a singular mission — to exude warmth, spread
+                  cheer, and cultivate happiness.Our goal is to impact 150
+                  million lives, which is the number that the sunshine reaches
+                  in kilometers. Also our total supply by design!
                 </p>
-
-                <div class="hero-buttons">
-                  <a
-                    style="text-transform: uppercase"
-                    href="/"
-                    target="_blank"
-                    class="btn btn-lg btn-pink"
-                    >Buy on Raydium or Jupiter
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    class="btn btn-lg btn-outline-pink"
-                    >JOIN THE TELEGRAM</a
-                  >
-                </div>
               </div>
             </div>
             <div class="right fade-right">
               <div>
                 <img
-                  src="./assets/rocket.png"
-                  class="img-fluid"
+                  src="./assets/hero.jpg"
+                  class="img-fluid rounded-xl"
                   style="width: 300px"
                   alt="logo"
                 />
@@ -93,226 +85,252 @@
           </div>
         </div>
       </section>
-      <div class="gradient-background"></div>
     </div>
-    <section class="who" id="about">
-      <div class="container">
-        <div class="who-wrapper" style="margin-bottom: 6rem">
-          <div class="left fade-left text-center">
-            <img
-              src="./assets/thumb-right.png"
-              alt="who"
-              class="img-fluid mb-3"
-              style="width: 170px"
-            />
-          </div>
-          <div class="right fade-right">
-            <div class="ms-0 ms-lg-4">
-              <div class="gradient-card" style="margin: 0">
-                <h2>Who is SUNSHINE?</h2>
-                <p>
-                  SUNSHINE is a team of sungazers that have dedicated their
-                  lives for a single mission - Radiating warmth, cheer, and
-                  happiness
-                </p>
-                <div class="who-btn">
-                  <a href="#" class="btn btn-lg btn-pink-gradient">
-                    READ THE WHITEPAPER
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+    <!-- live count buttons start -->
+    <section class="md:max-w-[1000px] md:px-0 px-2 mx-auto">
+      <div
+        class="flex justify-between items-center md:flex-row flex-col md:space-x-2 md:space-y-0 space-y-2"
+      >
+        <div
+          class="border-2 w-full flex justify-center items-center flex-col py-2 rounded-md"
+        >
+          <h4 class="text-2xl font-bold">500+</h4>
+          <h4 class="font-semibold text-xl uppercase">Holders</h4>
         </div>
-        <div class="who-wrapper flex-lg-row-reverse">
-          <div
-            class="left fade-right fade-to-right d-flex align-items-center justify-content-center"
+        <div
+          class="border-2 w-full flex justify-center items-center flex-col py-2 rounded-md"
+        >
+          <h4 class="text-2xl font-bold">2 Days</h4>
+          <h4 class="font-semibold text-xl uppercase">Live</h4>
+        </div>
+        <div
+          class="border-2 w-full flex justify-center items-center flex-col py-2 rounded-md"
+        >
+          <h4 class="text-2xl font-bold">Lives impacted</h4>
+          <h4 class="font-semibold text-xl uppercase">1000+</h4>
+        </div>
+      </div>
+    </section>
+
+    <!--  buttons start -->
+    <section class="md:max-w-[1000px] md:px-0 px-2 mx-auto">
+      <div class="bg-gray-300/20 p-5 rounded-xl">
+        <div class="flex justify-between items-center space-x-2 mb-3">
+          <a
+            class="border-2 w-full text-white flex justify-center items-center flex-col py-2"
           >
+            <button>Contract</button>
+          </a>
+          <a
+            class="border-2 w-full text-white flex justify-center items-center flex-col py-2"
+          >
+            <button>Join the Movement</button>
+          </a>
+          <a
+            class="border-2 w-full text-white flex justify-center items-center flex-col py-2"
+          >
+            <button>Dex Screener</button>
+          </a>
+        </div>
+        <div class="flex justify-between items-center space-x-2">
+          <a
+            class="border-2 w-full text-white flex justify-center items-center flex-col py-2"
+          >
+            <button>Raydium</button>
+          </a>
+          <a
+            class="border-2 w-full text-white flex justify-center items-center flex-col py-2"
+          >
+            <button>Jupiter</button>
+          </a>
+          <a
+            class="border-2 w-full text-white flex justify-center items-center flex-col py-2"
+          >
+            <button>Solscan</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="md:max-w-[1000px] md:px-0 px-2 mx-auto" id="about">
+      <div
+        class="flex justify-between items-center bg-gray-300/20 p-5 md:flex-row flex-col md:space-x-[100px] md:space-y-0 space-y-5"
+      >
+        <!-- left side  -->
+        <div class="w-full h-full rounded-xl fade-left">
+          <h2 class="text-3xl font-bold">About Sunshine</h2>
+          <p>
+            Solana has been through hell and back, beloved by many, and has
+            finally had the chance to shine! The real meaning of Solana is
+            SUNSHINE, which is the true meaning of what the blockchain is trying
+            to accomplish, and we are here to help spread the message through
+            our memes, utilities, and PoL (Power of Love).
+          </p>
+        </div>
+        <!-- right side  -->
+        <div class="w-full fade-right">
+          <div class="">
             <img
-              src="./assets/monkey-on-stone.png"
-              style="width: 200px"
-              class="img-fluid"
+              src="./assets/about.jpg"
+              class="md:w-full md:h-[250px] rounded-xl"
               alt=""
             />
           </div>
-          <div class="right fade-left">
-            <div class="me-0 me-lg-4">
-              <div id="rugfee" class="gradient-card" style="margin: 0">
-                <h2>Rug Free</h2>
-                <p>
-                  Our contract has been carefully developed by our devs, and we
-                  have made a great effort to ensure the safety and
-                  profitability of our sungazers. The liquidity will be locked
-                  for 13.5 months initially, and then relocked for thereafter.
-                </p>
-                <p>
-                  Fun fact the moon is 13.5 months away from earth. The
-                  development wallet is solely used for the success of the
-                  project. Our spending will be carefully planned and monitored
-                  to ensure the maximum efficiency. The majority of spending
-                  will be for marketing and listing fees.
-                </p>
-                <div class="who-btn">
-                  <a
-                    href="/"
-                    target="_blank"
-                    class="btn btn-lg btn-pink-gradient me-3 my-2"
-                    >CHART</a
-                  >
-                  <a
-                    href="/"
-                    target="_blank"
-                    class="btn btn-lg btn-pink-gradient my-2"
-                    >AUDIT (COMING SOON)</a
-                  >
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- chart -->
+    <section class="md:max-w-[1000px] md:px-0 px-2 mx-auto" id="tokenomic">
+      <div class="flex justify-between md:flex-row flex-col">
+        <div class="bg-gray-300/20 p-5 rounded-xl fade-left">
+          <h3 class="text-4xl font-bold">Tokenomics</h3>
+          <ul class="flex flex-col space-y-2">
+            <li>Launch LP 65%</li>
+            <li>Community Airdrop 15%</li>
+            <li>INSERT PIE CHART</li>
+            <li>Treasury & Marketing 10%</li>
+            <li>Presale 10%</li>
+            <li>Total Supply 150,000,000</li>
+            <li>Ticker $SUNSHINE Unique symbol provided by Solana Lab</li>
+            <li>Tax 0% We don't believe in taxes</li>
+            <li>Consensus PoL Power of Love</li>
+          </ul>
+        </div>
+        <div class="bg-gray-300/20 p-5 rounded-xl fade-right">
+          <div class="md:w-full">
+            <canvas id="myPieChart"></canvas>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- timeline -->
-    <section class="timeline-section bg-image milestone-galaxy">
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-dot flex justify-center items-center">
-            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
-          </div>
-          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
-            <div class="flex lg:justify-end justify-start">
-              <img
-                src="./assets/milestone-earth.png"
-                class="w-[80px] h-[80px] object-contain"
-                alt=""
-              />
-            </div>
-            <h3 class="">Launch From Earth</h3>
-            <ul class="mt-2">
-              <li>Website</li>
-              <li>Socials</li>
-              <li>marketing</li>
-              <li>Launch of SUNSHINE</li>
+    <!-- roadmap -->
+    <section class="md:max-w-[1000px] md:px-0 px-2 mx-auto" id="roadmap">
+      <!-- 1 -->
+      <div class="fade-right">
+        <div
+          class="flex justify-between items-center bg-gray-300/20 p-5 md:flex-row flex-col md:space-x-[100px] md:space-y-0 space-y-5"
+        >
+          <!-- left -->
+          <div class="w-full h-full rounded-xl fade-left">
+            <h3 class="text-3xl uppercase font-bold">PHASE 0 - Preparation</h3>
+            <ul>
+              <li>Initial Deployment & Launch</li>
+              <li>Organize Core Team and Early Backers</li>
+              <li>Presale Allocation</li>
+              <li>Liquidity Injection</li>
             </ul>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot flex justify-center items-center">
-            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
-          </div>
-          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
-            <div class="flex lg:justify-end justify-start">
-              <img
-                src="./assets/milestone-moon.png"
-                class="w-[80px] h-[80px] object-contain"
-                alt=""
-              />
-            </div>
-            <h3 class="">Moon 1000 Holders</h3>
-            <ul class="mt-2">
-              <li>CoinGecko, CoinMarketCap application</li>
-              <li>Sol logo application</li>
-              <li>Marketing Campaign</li>
-              <li>Techrate audit</li>
-              <li>CEX applications</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot flex justify-center items-center">
-            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
-          </div>
+          <!-- right -->
 
-          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
-            <div class="flex lg:justify-end justify-start">
+          <div class="w-full">
+            <div class="">
               <img
-                class="w-[80px] h-[80px] object-contain"
-                src="./assets/milestone-saturn.png"
+                src="./assets/rd1.jpg"
+                class="md:w-full md:h-[250px] object-containe rounded-xl"
                 alt=""
               />
             </div>
-            <h3>Launch From Earth</h3>
-            <ul class="mt-2">
-              <li>
-                <div class="flex items-center md:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-              <li>
-                <div class="flex items-center md:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-              <li>
-                <div class="flex items-center md:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-              <li>
-                <div class="flex items-center md:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot flex justify-center items-center">
-            <div class="w-5 h-5 bg-[#235871] rounded-full"></div>
-          </div>
-          <div class="timeline-content bg-gray-500/30 backdrop-blur-xl">
-            <div class="flex lg:justify-end justify-start">
+      </div>
+      <!-- 2 -->
+      <div class="fade-left mt-2">
+        <div
+          class="flex justify-between items-center bg-gray-300/20 p-5 md:flex-row flex-col md:space-x-[100px] md:space-y-0 space-y-5"
+        >
+          <!-- right -->
+          <div class="w-full">
+            <div class="">
               <img
-                class="w-[80px] h-[80px] object-contain"
-                src="./assets/milestone-jupiter.png"
+                src="./assets/re3.jpg"
+                class="md:w-full md:h-[250px] object-containe rounded-xl"
                 alt=""
               />
             </div>
-            <h3 class="lg:text-right">Beyond the MOON! 5000 Holders</h3>
-            <ul class="mt-2">
-              <li>
-                <div class="flex items-center lg:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-              <li>
-                <div class="flex items-center lg:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-              <li>
-                <div class="flex items-center lg:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
-              <li>
-                <div class="flex items-center lg:justify-end space-x-2">
-                  <img src="./assets/lock-icon.svg" class="w-10 h-10" alt="" />
-                  <span>To be unlocked</span>
-                </div>
-              </li>
+          </div>
+          <!-- left -->
+          <div class="w-full h-full rounded-xl fade-left">
+            <h3 class="text-3xl uppercase font-bold">
+              PHASE 1 - Initial Marketing Campaign
+            </h3>
+            <ul>
+              <li>PHASE 1 - Initial Marketing Campaign</li>
+              <li>Twitter Airdrop</li>
+              <li>Telegram Airdrop</li>
+              <li>Additional Airdrop</li>
+              <li>Influencer Partnerships</li>
+              <li>List on 1st CE</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="flex justify-center mt-5">
-        <img
-          src="./assets/sunshine.jpeg"
-          class="md:w-[400px] w-full md:h-[400px] h-full rounded"
-          alt=""
-        />
+      <!-- 3 -->
+      <div class="fade-right mt-2">
+        <div
+          class="flex justify-between items-center bg-gray-300/20 p-5 md:flex-row flex-col md:space-x-[100px] md:space-y-0 space-y-5"
+        >
+          <!-- left -->
+          <div class="w-full h-full rounded-xl fade-left">
+            <h3 class="text-3xl uppercase font-bold">
+              PHASE 2 - Project Expansion
+            </h3>
+            <ul>
+              <li>Project Partnerships</li>
+              <li>List on CG</li>
+              <li>List on CMC</li>
+              <li>Aggregate Features</li>
+              <li>List on Crypto.com</li>
+            </ul>
+          </div>
+          <!-- right -->
+
+          <div class="w-full">
+            <div class="">
+              <img
+                src="./assets/re3.jpg"
+                class="md:w-full md:h-[250px] object-containe rounded-xl"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="fade-left mt-2">
+        <div
+          class="flex justify-between items-center bg-gray-300/20 p-5 md:flex-row flex-col md:space-x-[100px] md:space-y-0 space-y-5"
+        >
+          <!-- right -->
+          <div class="w-full">
+            <div class="">
+              <img
+                src="./assets/rd4.jpg"
+                class="md:w-full md:h-[250px] object-containe rounded-xl"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- left -->
+          <div class="w-full h-full rounded-xl fade-left">
+            <h3 class="text-3xl uppercase font-bold">
+              PHASE 4 - SUNSHINE GO MAINSTREAM
+            </h3>
+            <ul>
+              <li>Media Outreach</li>
+              <li>Additional Marketing</li>
+              <li>Brand Value Creation</li>
+              <li>Utility Development</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- timeline end -->
-    <section class="pakonomics" id="pakonomics">
+
+    <!-- <section class="pakonomics" id="pakonomics">
       <div class="container">
         <div class="pakonomics-wrapper">
           <h2 class="title mb-5 fade-zoom-in">Tokenomics</h2>
@@ -353,9 +371,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="faq" id="faq">
+    <!-- <section class="faq" id="faq">
       <div class="container">
         <div class="faq-wrapper">
           <h2 class="title fade-zoom-in">FAQ</h2>
@@ -501,7 +519,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
       <div class="container">
         <h2 class="title fade-zoom-in">Follow us</h2>
@@ -609,6 +627,25 @@
           faqTitle.nextElementSibling.style.height = height + "px";
         else faqTitle.nextElementSibling.style.height = 0;
       });
+    });
+
+    // Sample data for the pie chart
+    var data = {
+      datasets: [
+        {
+          data: [65, 15, 10, 10],
+          backgroundColor: ["#ff8100", "#ff9a00", "#ffe700", "#ff9a00"],
+        },
+      ],
+    };
+
+    // Get the canvas element
+    var ctx = document.getElementById("myPieChart").getContext("2d");
+
+    // Create a pie chart
+    var myPieChart = new Chart(ctx, {
+      type: "pie",
+      data: data,
     });
   </script>
 </html>
