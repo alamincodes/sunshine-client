@@ -366,7 +366,7 @@ header .header-wrapper .menu {
 }
 .hero .hero-wrapper .left > div .site-title {
   font-size: 3rem;
-  color: var(--primary);
+  /* color: var(--primary); */
 }
 .hero .hero-wrapper .right > div {
   margin-left: 4rem;
@@ -701,6 +701,7 @@ footer .social ul {
   -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0;
+  margin-bottom: 50px;
 }
 footer .social ul li a {
   display: inline-block;
